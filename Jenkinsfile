@@ -9,7 +9,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/aditya290404/my-ci-cd-app.git'
+                git branch: 'main', url: 'https://github.com/aditya290404/my-ci-cd-app.git'
             }
         }
 
